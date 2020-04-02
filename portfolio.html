@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- My Style  -->
+    <style>
+        section{
+            min-height: 450px;
+        }
+        nav{
+            position: relative;
+            /* margin-top: -30px; */
+        }
+
+        .title .jumbotron {
+            background-image: url('img/img3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            /* margin-top: -40px; */
+        }
+
+        .title .jumbotron img {
+            margin-top: 30px;
+        }
+
+        .title .jumbotron::after{
+            content: '';
+            display: block;
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0)80%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .title .jumbotron .container{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Momentum</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,93 +71,101 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <img src="img/img5.png" width="25%" alt="" class="rounded-circle img-thumbnail">
-            <h1>Hulyo Firmasnyah Putra</h1>
-            <p>Learning to be a web programmer</p>
-        </div>
-    </div>
+    <section id="title" class="title">
 
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h1>About Me</h1>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center text-white">
+                <img src="img/img5.png" width="25%" alt="" class="rounded-circle img-thumbnail">
+                <h1>Hulyo Firmasnyah Putra</h1>
+                <p>Learning to be a web programmer</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam et optio assumenda esse totam tenetur maxime facilis cupiditate ex quo minima fugiat, beatae dolorum in nobis nemo ratione officiis.
-                </p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2>About Me</h2>
+                </div>
             </div>
-            <div class="col">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium itaque, blanditiis natus omnis magnam hic debitis quis nesciunt provident repellat non dignissimos optio beatae quibusdam ab nam deleniti commodi!
-                </p>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam et optio assumenda esse totam tenetur maxime facilis cupiditate ex quo minima fugiat, beatae dolorum in nobis nemo ratione officiis.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium itaque, blanditiis natus omnis magnam hic debitis quis nesciunt provident repellat non dignissimos optio beatae quibusdam ab nam deleniti commodi!
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col text-center">
-                <h1>Portfolio</h1>
+    <section id="porfolio" class="portfolio">
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img2.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img2.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card">
-                    <img src="img/img3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit corrupti voluptatum quasi illum ex odio
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/jquery.js"></script>
 </body>
